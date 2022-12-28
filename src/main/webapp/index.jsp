@@ -7,14 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-시작
-수빈수정
-쉉숮엇ㅈ어싲어싱저싱ㅈ서지
-<<<<<<< HEAD
-=======
-ㅁㄴㅇㅁㄴㅇㅁㄴㅇㄴㅁ
-수정
-사항사항
->>>>>>> 84f81d5df471c9f972b4614ab22ba9a574ed87c6
+마스터돌아워
 </body>
 </html>
