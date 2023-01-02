@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-시작
-수빈수정
-수정
-사항사항
+마스터돌아워
 </body>
 </html>
