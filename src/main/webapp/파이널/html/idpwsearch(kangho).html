@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/idpw.css">
+    <link rel="stylesheet" href="../css/exam.css">
+    <link rel="stylesheet" href="../css/exam(kangho).css">
+   
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="../js/exam research(kangho).js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+</head>
+    <div id="wrap">
+        <div id="header">            
+            <div class="header">
+                <div class="header-top">
+                    <div class="user-info">
+                        <ul class="user">
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>                                 
+            </div>            
+        </div>
+    </div>
+
+   <div id="container">
+      <div id="contents">
+        <div id="findIdpw">
+          <h3 class="crimson" style="font-size: 26px;
+          font-weight: 400;
+          line-height: 1;
+          letter-spacing: 0.05em;
+          color: #2c2c2c;
+          text-align: center;
+          padding-bottom: 25px;
+          margin-top:-100px;">Find ID/PW</h3>
+          <ul class="tab">
+            <li>
+            <a href="#" class="act">아이디찾기</a>
+            </li>
+            <li>
+            <a href="find_pw" class="pct">비밀번호찾기</a>
+            </li>
+          </ul>
+
+          <form name="ipinOutForm" method="post" action="#">
+            <input type="hidden" name="mail" value="send">
+            <input type="hidden" name="realname">
+            <input type="hidden" name="checktype">
+            <input type="hidden" name="find_type" value="">
+          </form>
+
+
+
+
+          <div class="find_id tab_con" style="display:block;">
+            <div class="radio-wrap">
+              <p>
+                 <label style="font-size:20px;">이메일  인증</label>
+              </p>              
+            </div>
+          </div>
+
+          <div class="loginInput">
+            <input type="text" id="name" name="name" class="MS_input_txt" value maxlength="30" title="이름" placeholder="이름">
+            <div class="div-idtype" id="find_id_email_wrap" style="display: block;">
+              <input type="text" id="find_id_email" name="find_id_email" class="MS_input_txt" value maxlength="80" title="이메일주소" placeholder="이메일">
+            </div>
+            <div class="div-idtype" id="find_id_mobile_wrap" style="display:none;">     
+              <input type="text" id="find_id_mobile" name="find_id_mobile" class="MS_input_txt" value maxlength="20" title="휴대폰번호" placeholder="휴대폰번호">       
+            </div>
+          </div>
+
+          <div class="loginMiddle">
+          <a href="javascript:find type('find_id');">아이디찾기</a>
+          <a href="#">로그인</a>          
+        </div>
+      </div>
+      </div>
+      <!-- 비밀번호 -->
+      <div id="findIdpw">
+      <div class="find_pw tab_con" style="display:block;" >
+        <div class="radio-wrap">
+         
+          <p>
+            <label style="font-size:20px;display:none;">휴대폰  인증</label>
+          </p>
+        </div>
+        <div id="find_pw_input wrap" style="display:none;">
+          <div class="loginInput">
+            <input type="text" name="user_id" id="user_id" value class="MS_input_txt" size="10" maxlength="12" placeholder="아이디">
+            <div class="div-pwtype" id="find_pw_mobile_wrap" style="display:block;">
+              <input type="text" name="mobile" class="MS_input_txt" value maxlength="20" title="휴대폰번호" placeholder="휴대폰번호">
+            </div>
+          </div>        
+          <div class="loginMiddle">
+            <a href="javascript:find type('find_pw');">임시비밀번호 발급</a>
+            <a href="#">로그인</a>
+          </div>
+        </div>
+        
+
+        <div id="find_pw_auto_wrap" style="display: none;">
+          <div class="login bottom">
+            <ul>
+              <li>
+                <a href="javascript:pop user auth('MOBILE','find', 'MOBILE');" class="btn_auth">휴대폰 인증</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   
+
+
+         
+</body>
+</html>
