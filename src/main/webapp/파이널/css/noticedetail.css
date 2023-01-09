@@ -98,38 +98,8 @@ body, input, textarea, select, button a {
 .content_sec .detailbox .detail_info .detail_date span {vertical-align: middle; font-size: 16px; color: #666;}
 .content_sec .detailbox .detail_content {width: 100%; min-height: 400px; max-height: 100%; border-bottom: 1px solid #bdbdbd;}
 .content_sec .detailbox .detail_content p {padding: 20px 40px;}
-.content_sec h3 {margin-top: 50px; margin-left: 20px;}
-.content_sec .review {width: 100%; display: flex; flex-direction: column;}
-.content_sec .review .review_text {display: flex; width: 100%; padding: 50px 0; }
-.content_sec .review .review_text .review_area textarea {resize: none; width: 600px; height: 60px; padding: 5px 10px; margin-right: 10px;}
-.content_sec .review .review_text .review_btn {display: flex; width: 100%;}
-.content_sec .review .review_text .review_btn button {width: 100px; height: 72px; vertical-align: middle; color: #fff; background-color: #000; font-size: 17px; font-weight: 600; cursor: pointer;}
-.content_sec .review .review_text .home_btn {margin-left: auto;}
-.content_sec .review .review_text .home_btn button {width: 100px; height: 72px; vertical-align: middle; color: #000; background-color: #fff; font-size: 17px; font-weight: 600; cursor: pointer; border: 0.1px solid #000;}
-.content_sec .review .review_show {display: flex; width: 1000px; flex-direction: column; border-top: 1px solid #000;}
-.content_sec .review .review_show .review_count {margin: 20px 0;}
-.content_sec .review .review_show .review_count span {font-size: 16px; font-weight: 600;}
-.content_sec .review .review_show .review_order {margin-bottom: 20px;}
-.content_sec .review .review_show .review_order ul {display: flex;}
-.content_sec .review .review_show .review_order ul li {padding-right: 10px; border-right: 1px solid #bdbdbd;}
-.content_sec .review .review_show .review_order ul li:last-child {padding: 0 10px; border-right: none;}
-.content_sec .review .review_show .review_order ul li a {color: #000; font-size: 15px;}
-.content_sec .review .review_show .review_order ul li a:hover {color: #666;}
-.content_sec .review .review_show .review_main {width: 100%; display: flex; flex-direction: column; }
-.content_sec .review .review_show .review_main .main_add{width: 100%; height: 120px; padding: 10px; border: 0.1px solid #000; border-radius: 5px; margin: 10px 0;}
-.content_sec .review .review_show .review_main .user_nick {display: flex; height: 20%; justify-content: space-between;}
-.content_sec .review .review_show .review_main .user_nick span {font-size: 15px; font-weight: 600;}
-.content_sec .review .review_show .review_main .user_nick button {border: none; background-color: #fff; cursor: pointer;}
-.content_sec .review .review_show .review_main .user_nick button img {width: 15px; height: 15px;}
-.content_sec .review .review_show .review_main .user_content {height: 50%; padding: 5px 0;}
-.content_sec .review .review_show .review_main .user_content p {font-size: 15px; font-weight: 200;}
-.content_sec .review .review_show .review_main .user_func {display: flex; justify-content: space-between; height: 20%;}
-.content_sec .review .review_show .review_main .user_func span {font-size: 14px;}
-.content_sec .review .review_show .review_main .user_func .user_good img {width: 30px; height: 30px; vertical-align: top; cursor: pointer;}
-.content_sec .review .review_show .review_main .user_func .user_good span {margin: 0 10px;}
-
-
-
+.content_sec .home_box {margin-top: 70px; display: flex; justify-content: end;}
+.content_sec .home_box .home_btn button {width: 120px; height: 60px; color: #000; background-color: #fff; border: 0.1px solid #000; font-weight: 700;}  
 
 
 /* 푸터 */

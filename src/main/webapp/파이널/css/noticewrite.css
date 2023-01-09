@@ -17,7 +17,7 @@ body, input, textarea, select, button a {
 
 #wrap {width: 100%;}
 #header{width: 100%; height: 200px;}
-#content {width: 100%; height: 100%; position: relative;}
+#content {width: 100%; height: 1200px; position: relative;}
 #footer{width: 100%; height: 300px; margin-top: 200px; background-color: #f1f1f1;}
 
 .inner {margin: 0 200px 0 200px; height: inherit;}
@@ -72,10 +72,6 @@ body, input, textarea, select, button a {
 .header .h_form .search_hide .search_bar .search_array .search_inp button {width: 30px; height: 30px; margin: 0 10px; background-color: #fff; border: none; cursor: pointer;}
 .header .h_form .search_hide .search_bar .search_array .search_inp button img{width: 25px; height: 25px;}
 
-
-
-
-
 /* 컨텐츠 */
 
 .content_fir {width: 100%; display: flex; justify-content: flex-end;}
@@ -84,64 +80,26 @@ body, input, textarea, select, button a {
 .content_fir .nav_box ul li a {font-size: 14px; color: #666; font-weight: 400; padding: 0 7px; overflow: hidden; white-space: nowrap;}
 .content_fir .nav_box ul li .nav_a {border-right: 1px solid #bdbdbd;}
 .content_fir .nav_box ul li a img {width: 20px; height: 20px; vertical-align: bottom; overflow: hidden; white-space: nowrap;}
-.content_sec {display: flex; flex-direction: column;}
+.content_sec {display: flex; flex-direction: column; }
 .content_sec h1 {margin: auto; margin-top: 50px; margin-bottom: 50px; font-size: 50px;}
-.content_sec .detailbox {display: flex; flex-direction: column; width: 100%; border-top: 1px solid #000; height: 100%;}
-.content_sec .detailbox .detail_info {display: flex; padding: 50px 5px; border-bottom: 1px solid #000;}
-.content_sec .detailbox .detail_info .detail_cate {flex: 1; text-align: center; border-right: 1px solid #bdbdbd;}
-.content_sec .detailbox .detail_info .detail_cate span {padding: 0 5px; color: #666; font-size: 16px; vertical-align: middle;}
-.content_sec .detailbox .detail_info .detail_title {flex: 7; text-align: left;}
-.content_sec .detailbox .detail_info .detail_title span {margin-left: 20px; font-size: 20px; font-weight: 700; vertical-align: middle;}
-.content_sec .detailbox .detail_info .detail_nick {flex: 1; text-align: center; border-right: 1px solid #bdbdbd;}
-.content_sec .detailbox .detail_info .detail_nick span {vertical-align: middle; font-size: 16px; color: #666;}
-.content_sec .detailbox .detail_info .detail_date {flex: 1; text-align: center;}
-.content_sec .detailbox .detail_info .detail_date span {vertical-align: middle; font-size: 16px; color: #666;}
-.content_sec .detailbox .detail_content {width: 100%; min-height: 400px; max-height: 100%; border-bottom: 1px solid #bdbdbd;}
-.content_sec .detailbox .detail_content p {padding: 20px 40px;}
-.content_sec h3 {margin-top: 50px; margin-left: 20px;}
-.content_sec .review {width: 100%; display: flex; flex-direction: column;}
-.content_sec .review .review_text {display: flex; width: 100%; padding: 50px 0; }
-.content_sec .review .review_text .review_area textarea {resize: none; width: 600px; height: 60px; padding: 5px 10px; margin-right: 10px;}
-.content_sec .review .review_text .review_btn {display: flex; width: 100%;}
-.content_sec .review .review_text .review_btn button {width: 100px; height: 72px; vertical-align: middle; color: #fff; background-color: #000; font-size: 17px; font-weight: 600; cursor: pointer;}
-.content_sec .review .review_text .home_btn {margin-left: auto;}
-.content_sec .review .review_text .home_btn button {width: 100px; height: 72px; vertical-align: middle; color: #000; background-color: #fff; font-size: 17px; font-weight: 600; cursor: pointer; border: 0.1px solid #000;}
-.content_sec .review .review_show {display: flex; width: 1000px; flex-direction: column; border-top: 1px solid #000;}
-.content_sec .review .review_show .review_count {margin: 20px 0;}
-.content_sec .review .review_show .review_count span {font-size: 16px; font-weight: 600;}
-.content_sec .review .review_show .review_order {margin-bottom: 20px;}
-.content_sec .review .review_show .review_order ul {display: flex;}
-.content_sec .review .review_show .review_order ul li {padding-right: 10px; border-right: 1px solid #bdbdbd;}
-.content_sec .review .review_show .review_order ul li:last-child {padding: 0 10px; border-right: none;}
-.content_sec .review .review_show .review_order ul li a {color: #000; font-size: 15px;}
-.content_sec .review .review_show .review_order ul li a:hover {color: #666;}
-.content_sec .review .review_show .review_main {width: 100%; display: flex; flex-direction: column; }
-.content_sec .review .review_show .review_main .main_add {width: 100%; height: 120px; padding: 10px; border: 0.1px solid #000; border-radius: 5px; margin: 10px 0;}
-.content_sec .review .review_show .review_main .main_add .user_nick {display: flex; height: 20%; justify-content: space-between;}
-.content_sec .review .review_show .review_main .main_add .user_nick span {font-size: 15px; font-weight: 600;}
-.content_sec .review .review_show .review_main .main_add .user_nick button {border: none; background-color: #fff; cursor: pointer;}
-.content_sec .review .review_show .review_main .main_add .user_nick button img {width: 15px; height: 15px;}
-.content_sec .review .review_show .review_main .main_add .user_content {height: 50%; padding: 5px 0;}
-.content_sec .review .review_show .review_main .main_add .user_content p {font-size: 15px; font-weight: 200;}
-.content_sec .review .review_show .review_main .main_add .user_func {display: flex; justify-content: space-between; height: 20%;}
-.content_sec .review .review_show .review_main .main_add .user_func span {font-size: 14px;}
-.content_sec .review .review_show .review_main .main_add .user_func .user_good button {color: #000; background-color: #fff; width: 40px; height: 20px; border: 0.1px solid #000; margin-right: 10px; cursor: pointer;}
-.content_sec .review .review_show .review_main .main_add .user_func .user_good img {width: 30px; height: 30px; vertical-align: top; cursor: pointer;}
-.content_sec .review .review_show .review_main .main_add .user_func .user_good span {margin: 0 10px;}
-.content_sec .review .review_show .review_main .user_comment_add {display: flex; flex-direction: column; width: 100%; height: 110px; border: 0.1px solid #000; border-radius: 5px; margin-left: 30px; padding: 10px;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_nick {display: flex; height: 20%; justify-content: space-between;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_nick span {font-size: 15px; font-weight: 600;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_nick button {border: none; background-color: #fff; cursor: pointer; }
-.content_sec .review .review_show .review_main .user_comment_add .comment_nick button img {width: 15px; height: 15px;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_content {height: 60%; padding: 5px 0;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_content p {font-size: 15px; font-weight: 200;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_btn {height: 20%; display: flex; justify-content: space-between;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_btn span {font-size: 14px;}
-.content_sec .review .review_show .review_main .user_comment_add .comment_btn button {margin-right: 10px; color: #000; background-color: #fff; width: 40px; height: 20px; border: 0.1px solid #000;}
-
-
-
-
+.content_sec .textbox {width: 100%; margin-top: 75px; border-top: 1px solid #000;}
+.content_sec .textbox form {width: 100%; display: flex; flex-direction: column;}
+.content_sec .textbox form table {width: 100%; border-collapse: collapse;}
+.content_sec .textbox form table tbody {}
+.content_sec .textbox form table tbody tr {height: 80px;}
+.content_sec .textbox form table tbody .th_textarea {height: 500px;}
+.content_sec .textbox form table tbody tr th {padding: 20px 10px; border-bottom: 1px solid #bdbdbd; background-color: #f1f1f1;}
+.content_sec .textbox form table tbody tr td {padding: 20px 15px; border-bottom: 1px solid #bdbdbd;}
+.content_sec .textbox form table tbody tr td .title_input {width: 100%; height: 40px; padding: 0 10px; font-size: 15px; font-weight: 500; box-sizing: border-box;}
+.content_sec .textbox form table tbody tr td select {padding: 0 10px; width: 100%; height: 40px; font-size: 15px;}
+.content_sec .textbox form table tbody tr td .nick_input {width: 100%; height: 40px; padding: 0 10px; font-size: 15px; font-weight: 500; box-sizing: border-box; background-color: aliceblue; border: 0.1px solid #000;}
+.content_sec .textbox form table tbody tr td .text_content {border: none;}
+.content_sec .postbox {display: flex; width: 100%; height: 100px;}
+.content_sec .postbox .homebox {flex: 1; margin: auto 0;}
+.content_sec .postbox .homebox button {width: 100px; height: 50px; color: #000; background-color: #fff; cursor: pointer; font-size: 16px; font-weight: 500; border: 0.1px solid #000;}
+.content_sec .postbox .modifybox {flex: 1; margin: auto 0; display: flex; justify-content: flex-end;}
+.content_sec .postbox .modifybox button {width: 100px; height: 50px; margin-right: 10px; color: #fff; background-color: #000; cursor: pointer; font-size: 16px; font-weight: 500; border: 0.1px solid #000;}
+.content_sec .postbox .modifybox button:last-child {margin-right: 20px; color: #000; background-color: rgba(255, 0, 0, 0.587);}
 
 /* 푸터 */
 
