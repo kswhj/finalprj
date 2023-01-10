@@ -7,14 +7,14 @@
     <title>Document</title>
     
      <!-- css -->
-    <link rel="stylesheet" href="../css/meetingdetail.css">
+    <link rel="stylesheet" href="../css/reviewmodify.css">
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    
 
 
     <!-- 폰트 -->
@@ -22,6 +22,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- 서머노트Api -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
 </head>
 <body>
@@ -139,103 +144,68 @@
                         <ul>
                             <li><a href="#" class="nav_a"><img src="../img/icons8-홈-페이지-25.png" alt="main화면"></a></li>
                             <li><a href="#" class="nav_a">커뮤니티</a></li>
-                            <li><a href="#">모임 게시판</a></li>
+                            <li><a href="#">수강생 후기</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="content_sec">
-                    <h1>모임 게시판</h1>
-                    <div class="detailbox">
-                        <div class="detail_info">
-                            <div class="detail_title">
-                                <span>제목이에욘</span>
-                            </div>
-                            <div class="detail_nick">
-                                <span>작성자 닉네임</span>
-                            </div>
-                            <div class="detail_date">
-                                <span>2023-01-01</span>
-                            </div>
-                            <div class="detail_count">
-                                <span>조회수 0</span>
-                            </div>
-                        </div>
-                        <div class=detail_content>
-                            <div class="con_box">
-                                <p>
-                                    내용이에욘 최대 몇자 정하지?
-                                </p>
-                            </div>
-                            <div class="info_box">
-                                <span>🌎서울</span>
-                                <span>💑성별</span>
-                                <span>🔞연령</span>
-                                <span>🎨카테고리</span>
-                                <span>🎣현재 4명 / 최대 6명</span>
-                            </div>                            
-                        </div>
-                    </div>
-                    <h3>댓글</h3>
-                    <div class="review">
-                        <div class="review_text">
-                            <div class="review_area">
-                                <textarea name="" id="" ></textarea>
-                            </div>
-                            <div class="review_btn">
-                                <button onclick="#">등록</button>
-                            </div>
-                            
-                            <div class="home_btn">
-                                <button onclick="#">목록</button>
-                                <button class="btn_re" onclick="">수정</button>
-                                <button class="btn_delete" onclick="">삭제</button>
-                                <button class="btn_join" onclick="">참여</button>
-                            </div>                            
-                        </div>
-                        <div class="review_show">
-                            <div class="review_count">
-                                <span>총 댓글 수 5</span>
-                            </div>
-                            <div class="review_order">
-                                <ul>
-                                    <li><a href="">추천순</a></li>
-                                    <li><a href="">최신순</a></li>
-                                </ul>
-                            </div>
-                            <div class="review_main">
-                                <div class="main_add">
-                                    <div class="user_nick">
-                                        <span>닉네임</span>
-                                        <button><img src="../img/icons8-지우다-24.png" alt="삭제"></button>
-                                    </div>
-                                    <div class="user_content">
-                                        <p>내용이에욘</p>
-                                    </div>
-                                    <div class="user_func">
-                                        <span>2023-01-01</span>
-                                        <div class="user_good">
-                                            <button onclick="#">답글</button>
-                                            <img src="../img/icons8-하트-50.png" alt="좋아요">
-                                            <span>0</span>
-                                        </div>
-                                    </div>
+                    <h1>수강생 후기 수정</h1>
+                    <div class="textbox">
+                        <form action="" method="post">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 15%;">
+                                    <col style="width: 35%;">
+                                    <col style="width: 15%;">
+                                    <col style="width: 35%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">제목</th>
+                                        <td><input type="text" name="" id="" class="title_input" placeholder="제목을 입력해주세요."></td>
+                                        <th scope="row">평점</th>
+                                        <td>
+                                            <div class="starpoint_set">
+                                                <span>*스크롤 후 클릭해주세요</span>
+                                                <input type="radio" name="starpoint" value="5" id="star1" class="star"><label for="star1" class="label">★</label>
+                                                <input type="radio" name="starpoint" value="4" id="star2" class="star"><label for="star2" class="label">★</label>
+                                                <input type="radio" name="starpoint" value="3" id="star3" class="star"><label for="star3" class="label">★</label>
+                                                <input type="radio" name="starpoint" value="2" id="star4" class="star"><label for="star4" class="label">★</label>
+                                                <input type="radio" name="starpoint" value="1" id="star5" class="star"><label for="star5" class="label">★</label>                                                
+                                                <input type="hidden" value="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">수강한 강의</th>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="체육">수영</option>                                        
+                                                <option value="요리">한식</option>
+                                                <option value="예능">바이올린</option>
+                                            </select>
+                                        </td>
+                                        <th scope="row">작성자</th>
+                                        <td><input type="text" placeholder="작성자 닉네임" class="nick_input" readonly></td>
+                                    </tr>
+                                    <tr class="th_textarea">
+                                        <th scope="row">내용</th>
+                                        <td colspan="3">
+                                            <textarea id="summernote" name="editordata" class="text_content"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="postbox">
+                                <div class="homebox">
+                                    <button onclick="location.href=#">목록</button>
                                 </div>
-                                <div class="user_comment_add">
-                                    <div class="comment_nick">
-                                        <span>리뷰 작성자</span>
-                                        <button><img src="../img/icons8-지우다-24.png" alt="삭제"></button>
-                                    </div>
-                                    <div class="comment_content">
-                                        <p>내용이에욘</p>
-                                    </div>
-                                    <div class="comment_btn">
-                                        <span>2023-01-01</span>
-                                        <button class="#">답글</button>
-                                    </div>
+                                <div class="modifybox">
+                                    <button type="submit">수정</button>
+                                    <button type="reset" class="cancle">취소</button>
                                 </div>
                             </div>
-                            
-                        </div>
+                        </form>
                     </div>
                     
                 </div>
@@ -243,7 +213,9 @@
         </div>
     </div>
 
-    <div id="wrap">
+
+
+     <div id="wrap">
         <div id="footer">
             <div class="inner">
                 <div class="footer">
@@ -314,6 +286,57 @@
             
             
         })
+
+        // 서머노트
+      
+    
+        $('#summernote').summernote({
+            height: 400,                 // 에디터 높이
+            minHeight: 400,             // 최소 높이
+            maxHeight: 400,             // 최대 높이
+            focus: true,
+            toolbar: [
+                // 글꼴 설정
+                ['fontname', ['fontname']],
+                // 글자 크기 설정
+                ['fontsize', ['fontsize']],
+                // 굵기, 기울임꼴, 밑줄,취소 선, 서식지우기
+                ['style', ['bold', 'italic', 'underline','strikethrough', 'clear']],
+                // 글자색
+                ['color', ['forecolor','color']],
+                // 표만들기
+                ['table', ['table']],
+                // 글머리 기호, 번호매기기, 문단정렬
+                ['para', ['ul', 'ol', 'paragraph']],
+                // 줄간격
+                ['height', ['height']],
+                // 그림첨부, 링크만들기, 동영상첨부
+                ['insert',['picture','link','video']],
+                // 코드보기, 확대해서보기, 도움말
+                ['view', ['cod3eview','fullscreen', 'help']]
+            ],
+            fontSizes: ['8','9','10','11','12','14','16','18','20','22','24','28','30','36','50','72']
+        });
+
+        $('.cancle').on('click', function() {
+            $('#summernote').summernote('reset');
+        })
+
+        /*
+        var result;
+        $('.label').hover(function() {
+            $(this).find('img').attr('src', '../img/icons8-채워진-스타-40.png');
+
+
+
+        }, function() {
+            $(this).find('img').attr('src', '../img/icons8-채워진-스타-40 (비어있는).png');
+        })
+        
+        $('.label').mouseover(function() {            
+            $(this).find('img').attr('src', '../img/icons8-채워진-스타-40.png')
+        })
+        */
 
         $(window).scroll(function( ){  //스크롤이 움직일때마다 이벤트 발생 
             

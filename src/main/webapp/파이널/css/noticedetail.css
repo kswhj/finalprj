@@ -99,7 +99,9 @@ body, input, textarea, select, button a {
 .content_sec .detailbox .detail_content {width: 100%; min-height: 400px; max-height: 100%; border-bottom: 1px solid #bdbdbd;}
 .content_sec .detailbox .detail_content p {padding: 20px 40px;}
 .content_sec .home_box {margin-top: 70px; display: flex; justify-content: end;}
-.content_sec .home_box .home_btn button {width: 120px; height: 60px; color: #000; background-color: #fff; border: 0.1px solid #000; font-weight: 700;}  
+.content_sec .home_box .home_btn button {width: 120px; height: 60px; color: #000; background-color: #fff; border: 0.1px solid #000; font-weight: 700; margin-right: 10px;}  
+.content_sec .home_box .home_btn .btn_re {vertical-align: middle; color: #fff; background-color: #000;}
+.content_sec .home_box .home_btn .btn_delete {vertical-align: middle; color: #000; background-color: rgba(255, 0, 0, 0.587);}
 
 
 /* 푸터 */
