@@ -1,0 +1,221 @@
+.container{
+  max-width: 1140px;
+      margin: 0 auto;
+}
+
+
+.lnbWrap{
+   float: left;
+   width: 178px;
+}
+.pageTitle{
+  font-size: 36px;
+  line-height: 1.39;
+  letter-spacing: -1.1px;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0 0 29px;
+}
+.lnbWrap .lnb li[data-v-0677509e] {
+  border-top: 1px solid #eee;
+}
+.lnbWrap .lnb li a[data-v-0677509e] {
+  display: block;
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -.019em;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.lnbWrap .lnb li.on>a[data-v-0677509e] {
+  font-weight: 700;
+}
+.lnbWrap .lnb[data-v-0677509e] {
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+.contentWrap{
+    float: right;
+    width: 890px;
+    padding-left: 54px;
+}
+.titSmall {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -.029em;
+  margin-bottom: 20px;
+}
+.customerInputForm {
+  border-top: 1px solid #333;
+}
+.customerInputForm .tableWrap>table {
+  width: 85%;
+  margin-left: 55px;
+}
+colgroup {
+  display: table-column-group;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.customerInputForm .tableWrap tr:first-child th {
+  padding-top: 32px;
+}
+.customerInputForm .tableWrap tr:first-child td {
+  padding-top: 20px;
+}
+.customerInputForm .tableWrap th {
+  font-size: 18px;
+  letter-spacing: -.019em;
+  text-align: left;
+}
+.customerInputForm .tableWrap tr td, .customerInputForm .tableWrap tr th {
+  vertical-align: top; 
+  padding-top: 30px;
+}
+.customerInputForm .tableWrap .selectWrap .v-select {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+.inputSet {
+  position: relative;
+}
+.inputSet .limit {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.inputSet .limit textarea {
+  border: 0;
+  height: 248px;
+  min-height: auto;
+  padding: 12px 14px;
+  color: #333;
+  font-size: 14px;
+  line-height: 22px;
+}
+.inputSet .limit .limitNumber {
+  font-size: 16px;
+  line-height: 18px;
+  color: #bfbfbf;
+  text-align: right;
+  padding: 0 12px 12px 0;
+}
+.customerInputForm .picUploadWrap .picUploadList:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.customerInputForm .picUploadWrap {
+  overflow: hidden;
+  padding-left:156px;
+  margin-top:-18px;
+}
+.customerInputForm .picUploadWrap .picUploadList li {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 96px;
+  height: 96px;
+  margin-right: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.customerInputForm .picUploadWrap .picUploadList li .btnUpload{
+  background:url(../img/camera.jpg) no-repeat 50% 50%;
+  background-size:34px auto;
+  background-color: #fff;
+  overflow: hidden;
+    text-indent: -99999px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    -webkit-box-flex: 0;
+}
+.customerInputForm .listDot {
+  padding-top: 10px;
+}
+.listDot li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: -2px;
+  font-size: 13px;
+  line-height: 1.46;
+  letter-spacing: -.015em;
+  color: black;
+}
+.contentWrap_subt{
+  padding-top:40px;
+}
+.contentWrap_supt{
+  padding-top:40px;
+}
+
+.customerInputForm .answerWrap li {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-left: 31px;
+}
+.customerInputForm .answerWrap li .checkboxSet {
+  margin-top: 13px;
+}
+.customerInputForm .answerWrap li .checkboxSet, .customerInputForm .answerWrap li .inputSet {
+  display: inline-block;
+  vertical-align: top;
+}
+input[type=checkbox] {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+}
+.answerWrap{
+  padding-left:122px;
+  margin-top:-34px;
+}
+.customerInputForm .answerWrap li .checkboxSet label, .customerInputForm .answerWrap li .inputSet label {
+  font-size: 14px;
+  letter-spacing: -.021em;
+  padding-right: 10px;
+}
+input[type=checkbox]+label {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 19px;
+  padding-left: 10px;
+}
+.customerInputForm .answerWrap li .checkboxSet, .customerInputForm .answerWrap li .inputSet {
+  display: inline-block;
+  vertical-align: top;
+  width:800px;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.buttonsm{  
+  margin-left:-280px;
+}
+.customerInputForm .btnWrap {
+  margin-top: 30px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.buttonsm>input{
+  width:150px;
+  height: 40px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}
