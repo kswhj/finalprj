@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/exam.css">
+    <link rel="stylesheet" href="../css/exam(kangho).css">
+    <link rel="stylesheet" href="../css/exam research(kangho).css">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="../js/exam research(kangho).js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">            
+            <div class="header">
+                <div class="header-top">
+                    <div class="user-info">
+                        <ul class="user">
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>                                 
+            </div>            
+        </div>
+    </div>
+    
+   <div id="main">
+   <div class="container"style="width:700px; padding-left:170px;">
+    <div class="input-form-backgroud row" style="margin-top:-215px;">
+      <div class="input-form col-md-12 mx-auto">
+        <h2 class="mb-3">회원가입</h2>
+        <form class="validation-form" novalidate>
+          <table style="border-collapse:collapse">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="id">아이디</label>
+              <input type="text" class="form-control" style="width:315px" id="id" placeholder="" value="" required>
+                          
+              <input type="button" value="ID중복확인"  class="form-control" style="width:115px; margin-top: -38px; margin-left:320px";>
+              <input type="hidden" name="idbtncheck" value="idUncheck"> 
+              <div class="invalid-feedback">
+                이름을 입력해주세요.
+              </div>       
+            </div>
+            
+            <div class="col-md-6 mb-3" style="margin-top:3px;margin-right:30px;">
+            <label for="nickname">닉네임</label>
+            <input type="text" class="form-control" style="width:300px" id="nickname" placeholder="" value="" required>
+            <input type="button" value="닉네임중복확인"  class="form-control" style="width:130px; margin-top: -38px; margin-left:305px";>
+            <input type="hidden" name="idbtncheck" value="idUncheck"> 
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="pwd">비밀번호</label>
+            <input type="password" class="form-control" id="pwd" style="width:435px"required>
+          </div>
+
+          <div class="mb-3">
+            <label for="pwd">비밀번호 재확인</label>
+            <input type="password" class="form-control" id="pwd" style="width:435px"required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">이메일 인증</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" style="width:300px"required>
+            <input type="button" value="이메일 인증"  class="form-control" style="width:130px; margin-top: -38px; margin-left:305px";>
+            <input type="hidden" name="idbtncheck" value="idUncheck">
+            <div class="invalid-feedback">
+              이메일을 입력해주세요.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="zipcode">우편번호</label>
+            <input name="zipcode" class="form-control" id="member_post" style="width:300px; background-color:white" readonly>
+            <input type="button" class="form-control" value="우편번호 찾기" onClick="findAddr();" style="width:130px; margin-top: -38px; margin-left:305px;" >
+            <div class="invalid-feedback">
+              주소를 입력해주세요.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">주소<span class="text-muted"></span></label>
+            <input type="text" class="form-control" id="member_addr" placeholder="상세주소를 입력해주세요." style="width:438px; background-color: white;">
+            <label for="address2" style="padding-top:15px;">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
+            <input type="text" class="form-control" id="member_addr" placeholder="상세주소를 입력해주세요." style="width:438px">
+          </div>
+
+          <div class="field tel-number">
+            <label for="number">휴대전화</label>           
+            </div>
+            <input type="text" placeholder="휴대전화번호를 입력하세요" class="form-control" style="width:438px" >            
+            </div>
+
+          <div class="row">
+            <div class="col-md-8 mb-3" style="padding-top:17px;">
+              <label for="root">서류첨부</label>
+              <input type="button" value="서류첨부"  class="form-control" style="width:440px; margin-bottom: -21px; margin-left:-2px";>
+              <input type="hidden" name="idbtncheck" value="idUncheck">
+              
+
+
+
+              <div class="invalid-feedback">
+                가입 경로를 선택해주세요.
+              </div>
+            </div>
+            
+              
+              
+            </div>
+          </div>
+          <hr style="width:435px;">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="aggrement" required>
+            <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+          </div>
+          <div class="mb-4"></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: #d9dcdf; border-color : #d9dcdf; width:438px;">가입 완료</button>
+        </table>
+        </form>
+      </div>
+    </div>    
+  </div>
+  </div>
+  </div>
+
+
+
+  <script>  
+   function findAddr(){
+   new daum.Postcode({
+        oncomplete: function(data) {
+           
+           console.log(data);
+           
+            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+            // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+            var roadAddr = data.roadAddress; // 도로명 주소 변수
+            var jibunAddr = data.jibunAddress; // 지번 주소 변수
+            // 우편번호와 주소 정보를 해당 필드에 넣는다.
+            document.getElementById('member_post').value = data.zonecode;
+            if(roadAddr !== ''){
+                document.getElementById("member_addr").value = roadAddr;
+            } 
+            else if(jibunAddr !== ''){
+                document.getElementById("member_addr").value = jibunAddr;
+            }
+        }
+    }).open();
+}
+
+  </script>            
+</body>
+</html>
