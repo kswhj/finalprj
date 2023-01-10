@@ -24,10 +24,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     
     <style>
-        .location{
+        .content_fir {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .content_fir .nav_box ul li .nav_a {
+            border-right: 1px solid #bdbdbd;
+        }
+        .content_fir .nav_box ul li a {
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            padding: 0 7px;
+            overflow: hidden;
+            white-space: nowrap;
+            
+        }
+        /* .location{
             position: relative; 
             text-align: right;
-        }
+        } */
         .innerMemberModify .name{
             font-size: 52px;
             margin-bottom: 20px;
@@ -61,6 +78,7 @@
         }
         .rightArea li{
             display: inline-block;
+            text-align: center;
         }
         .rightArea li a .txt{
             display: block;
@@ -134,18 +152,27 @@
     </head>
 <body>
     <!--header--> 
-    <jsp:include page=""/>
+    <jsp:include page="../common/header.jsp"/>
 
     <!--body-->
     <div id="wrap">
         <div id="content">
             <div class="inner">
                 <div class="inner1">
-                    <div class="location">
+                    <div class="content_fir">
+                        <div class="nav_box">
+                            <ul>
+                                <li><a href="#" class="nav_a"><img src="../img/icons8-홈-페이지-25.png" alt="main화면"></a></li>
+                                <li><a href="#" class="nav_a">마이페이지</a></li>
+                                <li><a href="#">회원정보변경</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="location">
                         <a href="#"><img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/common/btn_home.png">home</a>
                         <a href="#">마이페이지</a>
                         <a href="#">회원정보변경</a>
-                    </div>
+                    </div> -->
                     <div class="innerMemberModify">
                         <h2 class="name">
                             <span>
@@ -165,27 +192,20 @@
                             </dl>
                             <dl>
                                 <dt>
-                                    &emsp;<img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/contents/icon_field.png"><span>나의 관심분야</span>
+                                    &emsp;<img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/contents/icon_field.png"><span>나의 일정관리</span>
                                 </dt>
                             </dl>        
                         </div>
                         <div class="rightArea">
                             <ul>
                                 <li>
-                                    <a href="#"><img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/contents/icon_my_class_info01.png">
-                                    <span class="txt">장바구니</span>
+                                    <a href="#"><img src="../img/icons8-하트-50.png" alt="찜"><span class="txt">장바구니</span>
                                     <span class="num">0</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#"><img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/contents/icon_my_class_info02.png">
                                     <span class="txt">수강내역</span>
-                                    <span class="num">0</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/contents/icon_my_class_info03.png">
-                                    <span class="txt">대기자조회</span>
                                     <span class="num">0</span>
                                     </a>
                                 </li>
@@ -197,7 +217,7 @@
                                 </li>
                                 <li>
                                     <a href="#"><img src="https://culture.lotteshopping.com/LDCS/resources/normal/img/contents/icon_my_class_info06.png" alt="">
-                                    <span class="txt">만족도</span>
+                                    <span class="txt">수강후기</span>
                                     <span class="num">0</span>
                                     </a>
                                 </li>
@@ -227,7 +247,7 @@
                             </colgroup>
                             <tr>
                                 <th>성명</th>
-                                <td>지수빈</td>
+                                <td style="padding-right: 554px;">지수빈</td>
                                 <th>생년월일</th>
                                 <td>1996.03.02</td>
                             </tr>
@@ -313,6 +333,6 @@
     </div>
 
      <!--footer-->
-     <jsp:include page=""/>
+     <jsp:include page="../common/footer.jsp"/>
 </body>
 </html>
