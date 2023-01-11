@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/exam.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/exam(kangho).css">
       
     <!-- js -->
@@ -19,8 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
+    </head>
+    <body>  
     <div id="wrap">
         <div id="header">            
             <div class="header">
@@ -33,29 +33,27 @@
                             <li><a href="#">회원가입</a></li>
                         </ul>
                     </div>
-                </div>                                 
+                </div>                     
             </div>            
         </div>
     </div>
-        
-        <div id="main">
-        <h1><a href="#"><img src="../img/sejong logo.png" alt="세종문화회관"></a></h1>
-        <main>
+    <main>
+        <div id="container">
+        <div id="content" class="login">
+        <h2>로그인</h2>
+        <a href="#" target="_blank" title="새창" class="logo">
+        <img src="../img/moonhwa.png" alt="문화회관" style="margin-right:-10px; margin-top:5px;" >
+        </a>        
             <form action="#" method="post" id="loginFrm">
                 <fieldset style="border:0;">
                     <legend class="skip">로그인양식</legend>
-                    <ul>
+                    <ul class="loginList" style="padding-top:30px;">
                         <li>
-                            <span class="id_bg"> <!-- 배경이미지(메일) --></span>
-                            <span><input type="text" name="user_id" placeholder="아이디(이메일)"></span>
-                        </li>
-                        <li class="error id_error">아이디(이메일)는 이메일 형식으로 입력해주세요.</li>
+                            <input id="loginid" name="loginid" value type="text" title="아이디또는 이메일 입력" placeholder="아이디 또는 이메일을 입력해주세요">
+                        </li> 
                         <li>
-                            <span class="pw_bg"><!-- 배경이미지(비밀번호) --></span>
-                            <span><input type="password" name="user_pw" placeholder="비밀번호"></span>
-                            <span class="pw_show_hide" title="문자보이기"></span>
-                        </li>
-                        <li class="error pw_error">비밀번호를 입력해주세요</li>
+                            <input id="password" name="password" value type="password" title="비밀번호를 입력" placeholder="비밀번호를 입력해주세요" autocomplete="off">
+                        </li> 
                     </ul>
                     <div class="btm">
                         <p>
@@ -63,17 +61,35 @@
                                 <input type="checkbox" name="login_y" id="login_y">
                                 <span>자동로그인</span>
                             </label>
-                        </p>
-                        <a href="#" class="idpw_search">아이디(이메일)/비밀번호 찾기</a>
+                        </p>                      
                     </div>
                     <button type="submit" id="login_btn">로그인</button>
                 </fieldset>
             </form>
-            <a href="#" class="join_link">회원가입</a>
-        </main>
+            <div class="idpwSearch">
+                <a id="dFindId" href="#" title="아이디찾기" target="_blank">
+                    <span>아이디찾기</span>
+                </a>
+                <a id="dFindPw" href="#" title="비밀번호찾기" target="_blank">
+                    <span>비밀번호찾기</span>
+                </a>
+            </div>
+            <div class="loginTip">
+                <dl>
+                    악수문화센터에 처음 오셨나요?   
+                </dl>             
+                <dd>
+                    수강신청 관련 서비스를 이용하시려면
+                    <br>
+                    회원가입 해주세요.
+                </dd>
+                
+                <a href="#" title="회원가입" class="btn btnType01 btnBlue">
+                    <span>회원가입</span>
+                </a>
+            </div>        
         </div>
-        <footer>
-            All rights reserved.
-        </footer>      
+    </div>
+</main>
 </body>
 </html>
