@@ -7,91 +7,90 @@
     background-color: #CBCACA;
     border-radius: 10%;
 }
-.lecture_util{
+.class_util{
     margin-top: 20px;
     text-align: right;
 }
-/*----------------------기본설정-------------------------*/
-.lecture_status{
+.class_status{
     width: 100%;height: 50px;
 }
-.lecture_status li:first-child{
+.class_status li:first-child{
     float: left;
     background-color: orange;
     margin-left: 20px;
     padding: 5px;
     color: white;
 }
-.lecture_status li:nth-child(2){
+.class_status li:nth-child(2){
     float: left;
     background-color: red;
     margin: 0;
     padding: 5px;
     color: white;
 }
-.lecture_status li:last-child{
+.class_status li:last-child{
     float: left;
     border: 1px solid black;
     margin-left: 4px;
     padding: 4px;
 }
-.lecture_name table{
+.class_name table{
     width: 100%;
 }
-.lecture_name tr td:nth-child(2){
+.class_name tr td:nth-child(2){
     background-color: black;
     text-align:center;
 }
-.lecture_name tr td:nth-child(2) a{
+.class_name tr td:nth-child(2) a{
     color: white;
 }
-.lecture_name tr td:nth-child(3){
+.class_name tr td:nth-child(3){
     text-align:center;
     background-color:red;
 }
-.lecture_name tr td:nth-child(3) a{
+.class_name tr td:nth-child(3) a{
     color: white;
 }
-.lecture_name tr td:first-child{
+.class_name tr td:first-child{
     width: 60%;
 }
-.lecture_name tr:last-child td{
+.class_name tr:last-child td{
     padding-top: 10px;
     border-bottom: 2px solid black;
 }
-.lecture_info table{
+.class_info table{
     width: 100%;
     margin-top: 50px;
 }
-.lecture_info table tr td:first-child{
+.class_info table tr td:first-child{
     padding: 20px;
     text-align: center;
 }
-.lecture_info table tr td:first-child{
+.class_info table tr td:first-child{
     width: 60%;
 }
-.lecture_info table tr td:nth-child(2){
+.class_info table tr td:nth-child(2){
     width: 40%;
     text-align: center;
 }
-.lecture_info table tr td:nth-child(2) h2{
+.class_info table tr td:nth-child(2) h2{
     margin-top: 10px;
 }
-.lecture_info table .lecture_info2{
+.class_info table .class_info2{
     float: top;
     margin: 0 auto;
     width: 90%;
 }
-.lecture_info table .lecture_info2 tr td:first-child{
+.class_info table .class_info2 tr td:first-child{
     width: 30%;
 }
-.lecture_info table .lecture_info2 tr td:nth-child(2){
+.class_info table .class_info2 tr td:nth-child(2){
     width: 70%;
 }
-.lecture_info table .lecture_info2 tr:first-child td{
+.class_info table .class_info2 tr:first-child td{
     padding: 0;margin: 0;
 }
-.lecture_info table .lecture_info2 tr:nth-child(odd) td{
+.class_info table .class_info2 tr:nth-child(odd) td{
     padding: 0;margin: 0;
     border-bottom: 1px solid gray;
 }
@@ -102,48 +101,39 @@
     margin-right: 20px;
 }
 
-.lecture_regi{
+.class_regi{
     width: 100%;
     background-color: aqua;
-}
-.lecture_regi a{
+.class_regi a{
     margin: 10px;
     padding: 10px;
     float: right;
     color: white;
 }
-.lecture_regi a:nth-child(3){
+.class_regi a:nth-child(3){
     background-color: red;
 }
-.lecture_regi a:nth-child(4){
+.class_regi a:nth-child(4){
     background-color: black;
     margin: 10px;
     padding: 10px;
     float: right;
 }
-.lecture_regi a:nth-child(2){
+.class_regi a:nth-child(2){
     border: 1px solid gray;
     float: left;
     padding-left: 30px;
     padding-right: 30px;
     color: black;
 }
-.lecture_review{
+.class_review{
     width: 100%;
     float: left;
     margin-top: 30px;
 }
-.lecture_review h1{
+.class_review h1{
     float: left;
 }
-.lecture_review a{
+.class_review a{
     float: right;
-}
-
-@media only screen and (max-width: 1700px) {
-    #header {width: 1700px;}
-    #banner {width: 1700px;}
-    #content {width: 1700px;}
-    #footer {width: 1700px;}
-    .header .nav_bar {width: 1700px;}
 }

@@ -11,12 +11,11 @@ input{
     border: none;
     outline: none;
 }
-.lecture_util{
+.class_util{
     margin-top: 20px;
     text-align: right;
 }
-/*----------------------기본설정-------------------------*/
-.lecture_join{
+.class_join{
     width: 100%;
     margin: 50px auto;
     text-align: center;
@@ -45,37 +44,29 @@ input{
     font-size: xx-large;
 }
 
-.lecture_regi{
+.class_regi{
     width: 100%;
     text-align: center;
 }
-.lecture_regi a{
+.class_regi a{
     margin: 10px;
     padding: 10px;
     float: right;
     color: white;
 }
-.lecture_regi a:nth-child(3){
+.class_regi a:nth-child(3){
     background-color: red;
 }
-.lecture_regi a:nth-child(4){
+.class_regi a:nth-child(4){
     background-color: black;
     margin: 10px;
     padding: 10px;
     float: right;
 }
-.lecture_regi a:nth-child(2){
+.class_regi a:nth-child(2){
     border: 1px solid gray;
     float: left;
     padding-left: 30px;
     padding-right: 30px;
     color: black;
-}
-
-@media only screen and (max-width: 1700px) {
-    #header {width: 1700px;}
-    #banner {width: 1700px;}
-    #content {width: 1700px;}
-    #footer {width: 1700px;}
-    .header .nav_bar {width: 1700px;}
 }

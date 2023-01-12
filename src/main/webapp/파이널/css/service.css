@@ -18,7 +18,7 @@ body, input, textarea, select, button a {
 #wrap {width: 100%;}
 #header{width: 100%; height: 200px;}
 #banner {width: 100%; height: 500px;}
-#content {width: 100%; height: 1400px; position: relative;}
+#content {width: 100%; height: 250px; position: relative;}
 #footer{width: 100%; height: 300px; margin-top: 200px; background-color: #f1f1f1;}
 
 .inner {margin: 0 200px 0 200px; height: inherit;}
@@ -112,52 +112,114 @@ body, input, textarea, select, button a {
 .content_fir .nav_box ul li .nav_a {border-right: 1px solid #bdbdbd;}
 .content_fir .nav_box ul li a img {width: 20px; height: 20px; vertical-align: bottom; overflow: hidden; white-space: nowrap;}
 
+.wrap .contentArea {position: relative; padding: 45px 0 120px;}
+.container {max-width: 1140px;margin: 0 auto;}
+.container:after {   content: "";    clear: both;    display: block;}
+.lnbWrap{float: left; width: 178px;margin-top:-100px;}
+.pageTitle{ font-size: 36px; line-height: 1.39; letter-spacing: -1.1px; text-align: left;  margin-bottom: 0; padding: 0 0 29px;}
+.lnbWrap .lnb{   border-bottom: 1px solid #333;   padding-bottom: 8px;}
+.lnbWrap .lnb li:first-child {border-top: 0;}
+.lnbWrap .lnb li{  border-top: 1px solid #eee;}
+.lnbWrap .lnb li a{display: block;    padding: 16px 0;   font-size: 16px;   line-height: 24px;   letter-spacing: -.019em;}
+a {  text-decoration: none;    color: #333;}
+.lnbWrap .lnb li.on>a{font-weight: 700;}
+.lnbWrap .customerInfo{border-bottom:1px solid #eee; padding-top:33px; padding-bottom:23px;}
+.lnbWrap .customerInfo .title {font-size: 13px; line-height: 19px; letter-spacing: -.024em; color: #333;}
+.lnbWrap .customerInfo .tell {font-size: 30px; line-height: 36px; font-weight: 700; color: #333;}
+.customerInfo .title{padding-top:130px;}
+.number{font-size: 30px;line-height: 36px;font-weight: 700;color: #333;}
+.workingTime{font-size: 13px; line-height: 19px; letter-spacing: -.02em; color: #757575; margin-top: 7px;}
+.contentWrap { float: right; width: 960px; padding-left: 54px;margin-top:-230px;font-size:20px;}
+.titsmall {font-size:20px;}
+.tableWrap{padding-top:50px;padding-left:80px;}
+.contentWrap_supt {padding-top: 40px;}
 
-/* 최신강좌 */
-.content2 {width: 100%; display: flex; flex-direction: column;}
-.content2 h2 {font-size: 28px; height: 50px; margin-bottom: 50px;}
-.content2 .container {width: 100%; height: 450px;}
-.content2 .container .reco {width: 100%;}
-.content2 .container .reco .reco_ul {display: flex; flex-wrap: wrap; width: 100%;}
-.content2 .container .reco .reco_ul li {display: flex; flex-basis: 20%; width: 20%; position: relative; box-sizing: border-box; padding: 0 15px;}
-.content2 .container .reco .reco_ul li a {display: flex; position: relative; width: 100%; height: 350px; flex-direction: column;}
-.content2 .container .reco .reco_ul li a .img_box {position: relative;}
-.content2 .container .reco .reco_ul li a .img_box img {width: 100%; height: 300px;}
-.content2 .container .reco .reco_ul li a .img_info {display: none; position: absolute; background: rgba(0, 0, 0, 0.25); width: 100%; height: 300px;}
-.content2 .container .reco .reco_ul li a .img_info .info_detail {display: flex; flex-direction: column; margin: 10px 0 0 7px;}
-.content2 .container .reco .reco_ul li a .img_info .info_detail span {font-size: 18px; color: #f1f1f1; font-weight: 500; margin-bottom: 5px;}
-.content2 .container .reco .reco_ul li a .img_info .info_detail p {font-size: 14px; color: #f1f1f1; font-weight: 300;}
-.content2 .container .reco .reco_ul li a .img_title {display: flex; justify-content: center; align-items: center;}
-.content2 .container .reco .reco_ul li a .img_title p {color: #222; font-size: 15px; font-weight: 600;}
+.answerWrap {
+    padding-left: 122px;
+    margin-top: -34px;
+}
+.customerInputForm .answerWrap li {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-left: 31px;
+}
+.customerInputForm .answerWrap li .checkboxSet, .customerInputForm .answerWrap li .inputSet {
+    display: inline-block;
+    vertical-align: top;
+    width: 800px;
+}
+input[type=checkbox] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+}
+.customerInputForm .answerWrap li .checkboxSet label, .customerInputForm .answerWrap li .inputSet label {
+    font-size: 14px;
+    letter-spacing: -.021em;
+    padding-right: 10px;
+}
+input[type=checkbox]+label {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 19px;
+    padding-left: 10px;
+}
+input[type="text"], input[type="password"] {
+    appearance: none;
+    padding: 12px 86px;
+    line-height: 1.4em;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    letter-spacing: -.025em;
+    vertical-align: middle;
+    box-sizing: border-box;
+    outline: none;
+}
+.customerInputForm .btnWrap {
+    margin-top: 30px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+.buttonsm {
+    margin-left: -197px;
+}
+.buttonsm>input {
+    width: 150px;
+    height: 40px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.inputSet {
+    position: relative;
+}
+.inputSet .limit {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.inputSet .limit textarea {
+    border: 0;
+    height: 248px;
+    min-height: auto;
+    padding: 12px 14px;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+}
+.inputSet .limit .limitNumber {
+    font-size: 16px;
+    line-height: 18px;
+    color: #bfbfbf;
+    text-align: right;
+    padding: 0 12px 12px 0;
+}
 
-
-/* 공지사항 / 이벤트 */
-.content3 {display: flex; width: 100%; height: 300px;}
-.content3 .notice {flex: 1; display: flex; flex-direction: column; padding-right: 10px;}
-.content3 .notice .notice_box {margin-top: 20px; width: 100%; height: 100%; border-top: 1px solid #8f8f8f; border-bottom: 1px solid #8f8f8f; display: flex;}
-.content3 .notice .notice_box .notice_title {flex: 8; }
-.content3 .notice .notice_box .notice_title ul {display: flex; flex-direction: column;}
-.content3 .notice .notice_box .notice_title ul li {padding: 5px 0 5px 5px;}
-.content3 .notice .notice_box .notice_title ul li:first-child {padding-top: 10px;}
-.content3 .notice .notice_box .notice_title ul li a {color: #222; font-size: 16px; font-weight: 400;} 
-.content3 .notice .notice_box .notice_date {flex: 2;}
-.content3 .notice .notice_box .notice_date ul {display: flex; flex-direction: column;}
-.content3 .notice .notice_box .notice_date ul li {text-align: center; padding: 5px 0 5px 0;}
-.content3 .notice .notice_box .notice_date ul li:first-child {padding-top: 10px;}
-.content3 .notice .notice_box .notice_date ul li a {color: #222; font-size: 16px; font-weight: 400;} 
-
-.content3 .event {flex: 1; display: flex; flex-direction: column; padding-left: 10px;}
-.content3 .event .event_box {margin-top: 20px; width: 100%; height: 100%; border-top: 1px solid #8f8f8f; border-bottom: 1px solid #8f8f8f; display: flex;}
-.content3 .event .event_box .event_title {flex: 8;}
-.content3 .event .event_box .event_title ul {display: flex; flex-direction: column;}
-.content3 .event .event_box .event_title ul li {padding: 5px 0 5px 5px;}
-.content3 .event .event_box .event_title ul li:first-child {padding-top: 10px;}
-.content3 .event .event_box .event_title ul li a {color: #222; font-size: 16px; font-weight: 400;}
-.content3 .event .event_box .event_date {flex: 2;}
-.content3 .event .event_box .event_date ul {display: flex; flex-direction: column;}
-.content3 .event .event_box .event_date ul li {text-align: center; padding: 5px 0 5px 0;}
-.content3 .event .event_box .event_date ul li:first-child {padding-top: 10px;}
-.content3 .event .event_box .event_date ul li a {color: #222; font-size: 16px; font-weight: 400;}
 
 /* 퀵메뉴 */
 #content .quickmenu {display: flex; border: 1px solid #a1a1a1; position: absolute; left: 20px; top : 0px;}
@@ -190,6 +252,9 @@ body, input, textarea, select, button a {
 .swiper .swiper-pagination-bullet {background-color: #f1f1f1 !important; width: 12px; height: 12px;}
 .swiper .swiper-button-prev {color: #f1f1f1 !important; }
 .swiper .swiper-button-next {color: #f1f1f1 !important; }
+
+
+
 
 
 

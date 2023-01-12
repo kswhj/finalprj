@@ -18,7 +18,7 @@ body, input, textarea, select, button a {
 #wrap {width: 100%;}
 #header{width: 100%; height: 200px;}
 #banner {width: 100%; height: 500px;}
-#content {width: 100%; height: 1400px; position: relative;}
+#content {width: 100%; height: 250px; position: relative;}
 #footer{width: 100%; height: 300px; margin-top: 200px; background-color: #f1f1f1;}
 
 .inner {margin: 0 200px 0 200px; height: inherit;}
@@ -88,23 +88,6 @@ body, input, textarea, select, button a {
 
 
 /* 콘텐츠 */
-
-/* 추천강좌 */
-.content {width: 100%; margin-top: 100px; display: flex; flex-direction: column;}
-.content h2 {font-size: 28px; height: 50px; margin-bottom: 50px;}
-.content .container {width: 100%; height: 450px;}
-.content .container .reco {width: 100%;}
-.content .container .reco .reco_ul {display: flex; flex-wrap: wrap; width: 100%;}
-.content .container .reco .reco_ul li {display: flex; flex-basis: 20%; width: 20%; position: relative; box-sizing: border-box; padding: 0 15px;}
-.content .container .reco .reco_ul li a {display: flex; position: relative; width: 100%; height: 350px; flex-direction: column;}
-.content .container .reco .reco_ul li a .img_box {position: relative;}
-.content .container .reco .reco_ul li a .img_box img {width: 100%; height: 300px;}
-.content .container .reco .reco_ul li a .img_info {display: none; position: absolute; background: rgba(0, 0, 0, 0.25); width: 100%; height: 300px;}
-.content .container .reco .reco_ul li a .img_info .info_detail {display: flex; flex-direction: column; margin: 10px 0 0 7px;}
-.content .container .reco .reco_ul li a .img_info .info_detail span {font-size: 18px; color: #f1f1f1; font-weight: 500; margin-bottom: 5px;}
-.content .container .reco .reco_ul li a .img_info .info_detail p {font-size: 14px; color: #f1f1f1; font-weight: 300;}
-.content .container .reco .reco_ul li a .img_title {display: flex; justify-content: center; align-items: center;}
-.content .container .reco .reco_ul li a .img_title p {color: #222; font-size: 15px; font-weight: 600;}
 .content_fir {width: 100%; display: flex; justify-content: flex-end;}
 .content_fir .nav_box {margin: 50px 0;}
 .content_fir .nav_box ul {display: flex;}
@@ -113,23 +96,114 @@ body, input, textarea, select, button a {
 .content_fir .nav_box ul li a img {width: 20px; height: 20px; vertical-align: bottom; overflow: hidden; white-space: nowrap;}
 
 
-/* 최신강좌 */
-.content2 {width: 100%; display: flex; flex-direction: column;}
-.content2 h2 {font-size: 28px; height: 50px; margin-bottom: 50px;}
-.content2 .container {width: 100%; height: 450px;}
-.content2 .container .reco {width: 100%;}
-.content2 .container .reco .reco_ul {display: flex; flex-wrap: wrap; width: 100%;}
-.content2 .container .reco .reco_ul li {display: flex; flex-basis: 20%; width: 20%; position: relative; box-sizing: border-box; padding: 0 15px;}
-.content2 .container .reco .reco_ul li a {display: flex; position: relative; width: 100%; height: 350px; flex-direction: column;}
-.content2 .container .reco .reco_ul li a .img_box {position: relative;}
-.content2 .container .reco .reco_ul li a .img_box img {width: 100%; height: 300px;}
-.content2 .container .reco .reco_ul li a .img_info {display: none; position: absolute; background: rgba(0, 0, 0, 0.25); width: 100%; height: 300px;}
-.content2 .container .reco .reco_ul li a .img_info .info_detail {display: flex; flex-direction: column; margin: 10px 0 0 7px;}
-.content2 .container .reco .reco_ul li a .img_info .info_detail span {font-size: 18px; color: #f1f1f1; font-weight: 500; margin-bottom: 5px;}
-.content2 .container .reco .reco_ul li a .img_info .info_detail p {font-size: 14px; color: #f1f1f1; font-weight: 300;}
-.content2 .container .reco .reco_ul li a .img_title {display: flex; justify-content: center; align-items: center;}
-.content2 .container .reco .reco_ul li a .img_title p {color: #222; font-size: 15px; font-weight: 600;}
-
+#content > .innersection {
+    width: 1160px;
+    margin: 0 auto;
+}
+#content h2 {
+    font-size: 52px;
+    color: #000;
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 70px;
+}
+h2 {
+    letter-spacing: -3px;
+}
+.notiBoxArea {
+    padding: 30px;
+    position: relative;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+}
+.notiBoxArea ul li:first-child {
+    margin-top: 0;
+}
+.notiBoxArea ul li:after {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    display: block;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #999;    
+}
+.notiBoxArea .btn {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    padding: 0 12px;
+}
+.btnBlack {
+    background: #000;
+}
+.notiBoxArea ul li {
+    margin: 5px 0 0 0;
+    position: relative;
+    padding-left: 8px;
+    color: #999;
+    font-size: 18px;
+}
+.btnType04 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    min-width: 55px;
+}
+.btn{
+    padding:0 30px;
+    display:inline-block;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+}
+.btnWhite{
+    color:#222;
+}
+.btnArea .rightArea {
+    float: right;
+}
+.btnType03{
+    font-size:20px;
+    line-height: 66px;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.basicDataTable {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #ccc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.basicDataTable table {
+    table-layout: fixed;
+}
+.basicDataTable th {
+    
+    font-size: 16px;
+    color: #222;
+    text-align: center;
+    padding: 11px 5px 10px 5px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f4f4f4;
+    height: 50px;
+    font-weight: normal;
+}
+table td.noData {
+    height: 277px;
+    font-size: 22px;
+    color: #222;
+}
+.basicDataTable td{
+    text-align:center;
+    padding:11px 5px 10px 5px;
+}
 
 /* 공지사항 / 이벤트 */
 .content3 {display: flex; width: 100%; height: 300px;}
