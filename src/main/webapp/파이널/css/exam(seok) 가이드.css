@@ -1,0 +1,32 @@
+#content{width: 100%;height: auto;}
+
+.inner {margin: 0 400px 0 400px; height: inherit;}
+.inner hr{margin-top: 120px;}
+
+.lecture_util{
+    margin-top: 20px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1700px) {
+    #header {width: 1700px;}
+    #banner {width: 1700px;}
+    #content {width: 1700px;}
+    #footer {width: 1700px;}
+    .header .nav_bar {width: 1700px;}
+}
+/*----------------------기본설정-------------------------*/
+
+.lecture_guide{
+    margin: 50px auto;
+}
+.login_guide{
+}
+.login_guide li{
+    margin: 20px auto;
+}
+.join_guide{
+}
+.join_guide li{
+    margin: 20px auto;
+}
