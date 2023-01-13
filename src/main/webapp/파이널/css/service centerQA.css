@@ -131,7 +131,7 @@ body, input, textarea, select, button a {
 .search-panel > ul > li {display:inline-block;vertical-align:middle;}
 .search-panel >ul{text-align:right;margin-top:30px; padding-right:100px;}
 .search-bd-bottom{padding-bottom: 30px;margin-top:50px;width:1597px;}
-.bg-c{background-color:#266260 !important;}
+.bg-c{background-color:#aaa !important;}
 .btn-srch{color:#fff;width:94px;padding:10px 0 11px;}
 .btn{display:inline-block;text-align: center;vertical-align:top;box-sizing:border-box;}
 input.default-input {width: 50%;margin-right : 106px;}

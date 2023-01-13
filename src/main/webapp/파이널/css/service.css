@@ -112,115 +112,185 @@ body, input, textarea, select, button a {
 .content_fir .nav_box ul li .nav_a {border-right: 1px solid #bdbdbd;}
 .content_fir .nav_box ul li a img {width: 20px; height: 20px; vertical-align: bottom; overflow: hidden; white-space: nowrap;}
 
-.wrap .contentArea {position: relative; padding: 45px 0 120px;}
-.container {max-width: 1140px;margin: 0 auto;}
-.container:after {   content: "";    clear: both;    display: block;}
-.lnbWrap{float: left; width: 178px;margin-top:-100px;}
-.pageTitle{ font-size: 36px; line-height: 1.39; letter-spacing: -1.1px; text-align: left;  margin-bottom: 0; padding: 0 0 29px;}
-.lnbWrap .lnb{   border-bottom: 1px solid #333;   padding-bottom: 8px;}
-.lnbWrap .lnb li:first-child {border-top: 0;}
-.lnbWrap .lnb li{  border-top: 1px solid #eee;}
-.lnbWrap .lnb li a{display: block;    padding: 16px 0;   font-size: 16px;   line-height: 24px;   letter-spacing: -.019em;}
-a {  text-decoration: none;    color: #333;}
-.lnbWrap .lnb li.on>a{font-weight: 700;}
-.lnbWrap .customerInfo{border-bottom:1px solid #eee; padding-top:33px; padding-bottom:23px;}
-.lnbWrap .customerInfo .title {font-size: 13px; line-height: 19px; letter-spacing: -.024em; color: #333;}
-.lnbWrap .customerInfo .tell {font-size: 30px; line-height: 36px; font-weight: 700; color: #333;}
-.customerInfo .title{padding-top:130px;}
-.number{font-size: 30px;line-height: 36px;font-weight: 700;color: #333;}
-.workingTime{font-size: 13px; line-height: 19px; letter-spacing: -.02em; color: #757575; margin-top: 7px;}
-.contentWrap { float: right; width: 960px; padding-left: 54px;margin-top:-230px;font-size:20px;}
-.titsmall {font-size:20px;}
-.tableWrap{padding-top:50px;padding-left:80px;}
-.contentWrap_supt {padding-top: 40px;}
 
-.answerWrap {
-    padding-left: 122px;
-    margin-top: -34px;
+#content > .innersection {
+    width: 1160px;
+    margin: 0 auto;
 }
-.customerInputForm .answerWrap li {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    padding-left: 31px;
+#content h2 {
+    font-size: 52px;
+    color: #000;
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 70px;
 }
-.customerInputForm .answerWrap li .checkboxSet, .customerInputForm .answerWrap li .inputSet {
-    display: inline-block;
-    vertical-align: top;
-    width: 800px;
+h2 {
+    letter-spacing: -3px;
 }
-input[type=checkbox] {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    border: 1px solid #bfbfbf;
-    background-color: #fff;
+.notiBoxArea {
+    padding: 30px;
+    position: relative;
+    background: #f4f4f4;
+    margin-bottom: 20px;
 }
-.customerInputForm .answerWrap li .checkboxSet label, .customerInputForm .answerWrap li .inputSet label {
-    font-size: 14px;
-    letter-spacing: -.021em;
-    padding-right: 10px;
+.notiBoxArea ul li:first-child {
+    margin-top: 0;
 }
-input[type=checkbox]+label {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 19px;
-    padding-left: 10px;
+.notiBoxArea ul li:after {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    display: block;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #999;    
 }
-input[type="text"], input[type="password"] {
-    appearance: none;
-    padding: 12px 86px;
-    line-height: 1.4em;
-    background-color: #fff;
-    border: 1px solid #b9b9b9;
-    letter-spacing: -.025em;
+.notiBoxArea .btn {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    padding: 0 12px;
+}
+.btnBlack {
+    background: #000;
+}
+.notiBoxArea ul li {
+    margin: 5px 0 0 0;
+    position: relative;
+    padding-left: 8px;
+    color: #999;
+    font-size: 18px;
+}
+.btnType04 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    min-width: 55px;
+}
+.btn{
+    padding:19px 39px;
+    display:inline-block;
     vertical-align: middle;
-    box-sizing: border-box;
-    outline: none;
-}
-.customerInputForm .btnWrap {
-    margin-top: 30px;
-    padding-top: 40px;
-    border-top: 1px solid #eee;
+    color: #fff;
     text-align: center;
 }
-.buttonsm {
-    margin-left: -197px;
+.btnWhite {
+    background: #fff;
+    border: 1px solid #aaa;
+    color: #222;
 }
-.buttonsm>input {
-    width: 150px;
-    height: 40px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #ccc;
+.btnType03 {
+    height: 66px;
+    line-height: 66px;
+    font-size: 20px;
+    min-width: 120px;
 }
-.inputSet {
-    position: relative;
+.btnArea{
+    padding-top:30px;
 }
-.inputSet .limit {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.btnArea .rightArea {
+    float: right;
 }
-.inputSet .limit textarea {
-    border: 0;
-    height: 248px;
-    min-height: auto;
-    padding: 12px 14px;
-    color: #333;
-    font-size: 14px;
-    line-height: 22px;
+.btnArea .leftArea {
+    float: left;
 }
-.inputSet .limit .limitNumber {
+.btnArea .leftArea a:first-child {
+    margin-left: 0;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.btnRed {
+    background: #eb2d2f;
+}
+
+.basicDataTable {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #ccc;
+}
+.basicDataTable td{  
+        font-size: 15px;
+        color: #666;
+        text-align: center;
+        padding: 11px 5px 10px 5px;
+        border-bottom: 1px solid #e5e5e5;
+        height: 86px;
+}
+
+.basicDataTable.aLeft th {
+    font-size: 15px;
+}
+.basicDataTable.aLeft th{
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 30px;
     font-size: 16px;
-    line-height: 18px;
-    color: #bfbfbf;
-    text-align: right;
-    padding: 0 12px 12px 0;
 }
-
-
+.basicDataTable.aLeft td {
+    text-align: left;
+    padding-left: 52px;
+    padding-right: 30px;
+    font-size: 16px;
+}
+.basicDataTable th { 
+    color: #222;    
+    padding: 11px 5px 10px 5px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f4f4f4;
+    height: 66px;
+    font-weight: normal;    
+}
+label, button {
+    cursor: pointer;
+}
+input[type="text"] {
+    display: inline-block;
+    width: 100%;
+    height: 44px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #222;
+    font-size: 15px;
+    line-height: 44px;
+}
+.selectWrap {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.selectBox {
+    display: inline-block;   
+    height: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background: #fff;
+    color: #222;
+    font-size: 13px;    
+    width:200%;
+}
+.basicDataTable .content textarea {
+    height: 300px;
+    width: 100%;
+    overflow-y: auto;
+    line-height: 1.6;
+    padding: 10px;
+}
+textarea {
+    border: 1px solid #ccc;   
+    color: #666;
+}
+table {
+    width: 99%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea, select {
+    font-family: 'Noto Sans KR',Helvetica,"Apple SD Gothic Neo",sans-serif;    font-weight: 400;    vertical-align: middle;}
 /* 퀵메뉴 */
 #content .quickmenu {display: flex; border: 1px solid #a1a1a1; position: absolute; left: 20px; top : 0px;}
 #content .quickmenu ul {display: flex; flex-direction: column; width: 50px; align-items: center;}

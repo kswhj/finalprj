@@ -36,9 +36,9 @@
 }
 .class_name table{
     width: 100%;
+    padding-top:30px;
 }
-.class_name tr td:nth-child(2){
-    background-color: black;
+.class_name tr td:nth-child(2){    
     text-align:center;
 }
 .class_name tr td:nth-child(2) a{
@@ -46,18 +46,22 @@
 }
 .class_name tr td:nth-child(3){
     text-align:center;
-    background-color:red;
+   
 }
 .class_name tr td:nth-child(3) a{
     color: white;
 }
 .class_name tr td:first-child{
-    width: 60%;
+    width: 79%;
 }
 .class_name tr:last-child td{
     padding-top: 10px;
     border-bottom: 2px solid black;
 }
+.jangbaguni{
+    padding-left:40px;
+}
+
 .class_info table{
     width: 100%;
     margin-top: 50px;
@@ -104,6 +108,7 @@
 .class_regi{
     width: 100%;
     background-color: aqua;
+}
 .class_regi a{
     margin: 10px;
     padding: 10px;
@@ -135,5 +140,23 @@
     float: left;
 }
 .class_review a{
+    float: right;
+}
+
+.class_ref{
+    background-color: red;
+}
+.class_reg{
+    background-color: black;
+}
+
+.btnArea {
+    margin-bottom: 60px;
+    font-size: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.btnArea .rightArea {
     float: right;
 }
